@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping center</title>
+</head>
+
+<body>
+    <header>
+        <!--SHOPPING CART-->
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SHOPPING CENTER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img class="cart-icon" src="./assets/images/shopping-cart.png"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <div id="shopping-cart" class="shopping-cart container-lg">
+                        <div class="card" style="width: 80%;">
+                            <div class="card-body">
+                                <div>
+                                    <h6 class="card-title"><strong>Sub-total:</strong></h6>
+                                    <p class="card-text">$30</p>
+                                </div>
+                                <div>
+                                    <h6 class="card-title"><strong>Total(+tax):</strong></h6>
+                                    <p class="card-text">$30</p>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-success">Place order!</a>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <div class="d-flex">
+                <input id="searching-bar" class="form-control me-sm-2" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="sorting-buttons-container">
+            <a id="btnMinMax" class="btn btn-secondary">Sort by price Min-Max</a>
+            <a id="btnMaxMin" class="btn btn-secondary">Sort by price Max-Min</a>
+            <a id="btnAz" class="btn btn-secondary">Sort by A-Z</a>
+            <a id="btnReset" class="btn btn-danger">Reset sorting</a>
+        </div>
+
+        <!--Product list-->
+        <div id="productList" class="product-container container-md">
+
+            
+        </div>
+
+    </main>
+
+    <footer>
+    </footer>
+    <!--CDN BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
